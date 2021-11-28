@@ -1,0 +1,5 @@
+<!ELEMENT c3p0-config (named-config)>
+<!ELEMENT named-config (property+)>
+<!ATTLIST named-config name NMTOKEN #REQUIRED>
+<!ELEMENT property (#PCDATA)>
+<!ATTLIST property name ID #REQUIRED>

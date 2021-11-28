@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+
+<filter>
+	<filter-name>LoginFilter</filter-name>
+	<filter-class>cn.sion.csm.filter.LoginFilter</filter-class>
+	<init-param>
+		<param-name>authority</param-name>
+		<param-value>index.jsp,edit.jsp,filedisplay.jsp,filedisplayall.jsp,filesystem.jsp,fileupload.jsp,queryallfiles.jsp,queryallusers.jsp,queryonline.jsp,tracedetail.jsp,tracedisplay.jsp,tracerecord.jsp,traceupdate.jsp,delete.udo,edit.udo,editsub.udo,query.udo,online.udo,upload.up,write.up,display.up,displaysearch.up,displaysection.up,delete.up,download.up,view.up,query.pdo,querydetail.pdo,getimg.pdo,gettxt.pdo,delete.pdo,deletedetail.pdo,add.pdo,edit.pdo</param-value>
+	</init-param>
+	<init-param>
+		<param-name>noautho</param-name>
+		<param-value>login.jsp,add.jsp,error.jsp,add.udo,login.udo,logout.udo,wxlogin.udo,wxdisplaysection.up,wxupload.up,wxdisplaysearch.up,wxquery.pdo,wxquerypage.pdo,wxquerydetail.pdo,wxadd.pdo,wxaddpic.pdo,wxedit.pdo,wxeditpic.pdo</param-value>
+	</init-param>
+</filter>
+<filter-mapping>
+	<filter-name>LoginFilter</filter-name>
+	<url-pattern>/*</url-pattern>
+</filter-mapping>
+
+</web-app>

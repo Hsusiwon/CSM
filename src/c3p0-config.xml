@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="c3p0-config.xsd"?>
+<c3p0-config>
+  <named-config name="mysql">
+   	
+   	<property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+   	<property name="jdbcUrl"><!--jdbc:mysql://192.168.168.3:3306/csm?useSSL=false&amp;serverTimezone=GMT&amp;allowPublicKeyRetrieval=true--><!--jdbc:mysql://110.40.133.35:3306/csm?useSSL=false-->jdbc:mysql://110.40.133.35:3306/csm?useSSL=false</property>
+   	<property name="user">root</property>
+   	<property name="password"><!--sion1006--><!--Hsusiwon1006-->Hsusiwon1006</property>
+   	
+   	
+    <property name="acquireIncrement">5</property>
+    <property name="initialPoolSize">10</property>
+    <property name="minPoolSize">5</property>
+    <property name="maxPoolSize">100</property>
+
+    <property name="maxStatements">2</property> 
+    <property name="maxStatementsPerConnection">5</property>
+
+  </named-config>
+</c3p0-config>
